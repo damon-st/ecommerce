@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pregunta_imagen"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mensajes"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/receptor_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/pregunta_imagen"
+        android:background="@drawable/receiver_messages_layout"
+        android:text="reciver message here"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviador_mensaje"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sender_messages_layout"
+        android:text="sender message"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>

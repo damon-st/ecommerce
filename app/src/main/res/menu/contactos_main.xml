@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/nav_mensajes_contactos"
+        android:icon="@drawable/email"
+        android:iconTint="@android:color/black"
+        android:title="Mensajes" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_home_contactos"-->
+<!--        android:icon="@drawable/icono_perfil"-->
+<!--        android:title="Contactos" />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_solicitudes_contactos"-->
+<!--        android:icon="@drawable/buscaramigos"-->
+<!--        android:title="Solicitudes" />-->
+
+
+
+
+
+    <item
+        android:id="@+id/navigation_logout_contactos"
+        android:icon="@drawable/logout"
+        android:title="Volver al Menu" />
+
+</menu>

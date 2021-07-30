@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141932"
+    tools:context=".Buyers.CategoriaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/categoria_atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/atras"
+            android:backgroundTint="#141932"/>
+
+        <TextView
+            android:id="@+id/titulo_categoria"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria de Juego "
+            android:gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/vista"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tolbar"
+        android:background="#FFFFFF"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vista"/>
+    <TextView
+        android:id="@+id/texto_nohay_productos"
+        android:textSize="20sp"
+       android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR EL MOMENTO NO AY PUBLICACIONES  EN ESTA CATEGORIA"
+        android:textAlignment="center"
+        android:layout_below="@+id/signo_nohay_productos"
+        android:textColor="#fff"/>
+    <ImageView
+        android:id="@+id/signo_nohay_productos"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/interrogacion"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

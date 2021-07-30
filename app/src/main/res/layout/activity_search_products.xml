@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141932"
+    tools:context=".Buyers.SearchProductsActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="7dp"
+            android:id="@+id/car"
+            >
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Producto"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="9dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+
+                android:id="@+id/search_product_name"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/boton_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/car"
+            android:text="Buscar"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttons"/>
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r4"
+        android:id="@+id/swiperefresh">
+
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/search_list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+          </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+</RelativeLayout>

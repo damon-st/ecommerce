@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141932"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+
+
+
+
+    <!--fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation"></fragment-->
+
+    <com.glide.slider.library.SliderLayout
+
+        android:layout_marginTop="1dp"
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_below="@+id/slider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/recycle_menu"-->
+<!--        android:scrollbars="vertical">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/slider"
+        >
+    <LinearLayout
+        android:id="@+id/linear_principal"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cuadro_categoria"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/texto_genero_main"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria Articulos"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:id="@+id/linear_laptops"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/laptops"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/texto_laptop"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laptops"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:id="@+id/linear_audiculares"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/headphoness"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/texto_audiculares"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audiculares"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:id="@+id/linear_zapatos"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/shoess"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/texto_zapatos"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zapatos"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:id="@+id/linear_telefono"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/mobiles"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/texto_aventura_main"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefonos"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <LinearLayout
+            android:id="@+id/linear_todo_categorias"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:id="@+id/texto_todas_categorias"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VER TODAS LAS CATEGORIAS DE ARTICULOS"
+                android:textColor="@android:color/black"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/siguiente"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

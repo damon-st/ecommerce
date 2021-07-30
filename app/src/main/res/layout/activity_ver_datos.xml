@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.VerMensajesEscritos">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tabs"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/vendedor_datos_recyclerview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/miscontactos"-->
+<!--        android:layout_below="@+id/main_tabs"-->
+<!--        android:layout_marginTop="-1dp"-->
+<!--        android:layout_marginBottom="0dp">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tabs_pager"
+        android:layout_above="@+id/miscontactos"
+        android:layout_below="@+id/main_tabs">
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/miscontactos"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/contactos_main" />
+
+</RelativeLayout>

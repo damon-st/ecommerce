@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222431"
+    tools:context=".Buyers.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/slider_pager"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/indicator_selector"
+        android:layout_below="@+id/slider_pager"/>
+
+
+    <View
+        android:id="@+id/vista"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/indicator"
+        android:layout_marginTop="5dp"
+        android:background="#707070"
+        android:layout_margin="25dp"/>
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/vista"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Iniciar Seccion"
+        android:background="#41AFC6"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/main_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/register_btn"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="Registrarme"
+        android:id="@+id/main_join_now_btn"/>
+
+
+
+</RelativeLayout>

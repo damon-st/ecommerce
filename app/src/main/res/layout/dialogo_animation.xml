@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:lottie_rawRes="@raw/send_email"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@+id/animationView"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:id="@+id/texto_dialogo"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/texto_dialogo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/boton_close"
+                app:lottie_rawRes="@raw/btn_close"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

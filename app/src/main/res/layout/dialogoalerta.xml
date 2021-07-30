@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/boton_serrar_dialogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="end"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/interrogacion"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/texto_dialogo_uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hola ya tienes al vendedor en tus mensajes puedes"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagenerror"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/emojiuno"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/texto_dialogo_dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si deseas  darle al botón mensaje y te llevara a su ultimo chat con el vendedor"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/boton_mensaje_dialogo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="MENSAJES"
+            android:textSize="18sp"
+            android:background="@drawable/color_boton_dialogo"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

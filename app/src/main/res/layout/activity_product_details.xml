@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.ProductDetailsActivity">
+
+
+     <ScrollView
+         android:layout_above="@+id/contactarse"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="380dp"
+                 android:scaleType="centerCrop"
+                 android:id="@+id/product_image_details"/>
+
+             <LinearLayout
+                 android:padding="10dp"
+                 android:gravity="end"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                 <TextView
+                     android:id="@+id/reportar_publicacion"
+                     android:textColor="#fff"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Reportar Publicacion"
+                     />
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_report"
+                    />
+             </LinearLayout>
+
+             <TextView
+                 android:layout_marginTop="10dp"
+                 android:textColor="#fff"
+                 android:id="@+id/estado"
+                 android:layout_marginStart="10dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Estado del Producto"/>
+
+             <TextView
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/product_name_details"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/product_image_details"
+                 android:text="Nombre Producto"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:textColor="@android:color/white"
+                 android:layout_marginTop="10dp"/>
+
+
+             <TextView
+                 android:id="@+id/product_price_details"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/product_description_details"
+                 android:text="Precio de Producto"
+                 android:textSize="16sp"
+                 android:textStyle="bold"
+                 android:gravity="center"
+                 android:textColor="@android:color/white"
+                 android:layout_marginTop="10dp"/>
+
+             <TextView
+                 android:id="@+id/cantidad"
+                 android:layout_margin="10dp"
+                 android:background="@drawable/receiver_messages_layout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Selecciona la cantidad que deas adquirir"
+                 android:layout_below="@+id/number_btn"
+                 android:layout_marginTop="10dp"
+                 android:textColor="@android:color/black"
+                 android:textAlignment="center"/>
+
+             <TextView
+                 android:layout_margin="10dp"
+                 android:background="@drawable/receiver_messages_layout"
+                 android:id="@+id/product_description_details"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/product_name_details"
+                 android:text="Descripcion de Producto"
+                 android:textSize="16sp"
+                 android:textStyle="bold"
+                 android:gravity="center"
+                 android:textColor="@android:color/black"
+                 android:layout_marginTop="10dp"/>
+
+
+<!--             <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+<!--                 android:layout_width="wrap_content"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:elevation="6dp"-->
+<!--                 app:textSize="16dp"-->
+<!--                 app:initialNumber="1"-->
+<!--                 app:finalNumber="10"-->
+<!--                 android:layout_marginLeft="100dp"-->
+<!--                 android:layout_marginTop="15dp"-->
+<!--                 android:id="@+id/number_btn"-->
+<!--                 >-->
+
+<!--             </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>-->
+
+
+
+<!--             <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                 -->
+<!--                 android:id="@+id/add_product_to_cart"-->
+<!--                 android:layout_width="wrap_content"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:backgroundTint="@android:color/white"-->
+<!--                 android:layout_marginLeft="300dp"-->
+<!--                 android:src="@drawable/nav_cart">-->
+
+<!--             </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+             <LinearLayout
+                 android:paddingTop="3dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:id="@+id/preguntas"
+                 >
+                 <TextView
+                     android:id="@+id/texto_pregunta"
+                     android:layout_marginStart="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:hint="Preguntas y Respuesta:"
+                     android:textSize="24dp"
+                     android:textAlignment="center"
+                     android:textColorHint="@android:color/white"
+                     />
+
+                 <ImageView
+                     android:layout_marginTop="10dp"
+                     android:layout_marginStart="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_coments"/>
+
+             </LinearLayout>
+
+
+             <TextView
+                 android:layout_marginTop="10dp"
+                 android:paddingTop="1dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/relacionados"
+                 android:hint="PRODUCTOS RELACIONADOS"
+                 android:textSize="24dp"
+                 android:textAlignment="center"
+                 android:textColor="@android:color/white"
+                 />
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/recycler_relacionado"/>
+
+
+         </LinearLayout>
+     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/proges_dialog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        android:indeterminateDuration="@android:integer/config_longAnimTime" />
+
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/contactarse"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/mensajeria_bottom" />
+
+
+</RelativeLayout>

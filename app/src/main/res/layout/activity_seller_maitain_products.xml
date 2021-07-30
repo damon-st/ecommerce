@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardElevation="15dp"
+    tools:context=".Admin.SellerMaintainProductsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/product_Name"
+            android:id="@+id/produc_image_maintain"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cambiarImagenProducto"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Imagen del Producto"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE DEL PRODUCTO"
+                android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/product_name_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de Producto"
+            android:layout_below="@+id/produc_image_maintain"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/input_desing"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO DEL PRODUCTO"
+                android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/product_Price_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio de  Producto"
+            android:layout_below="@+id/product_name_maintain"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/input_desing"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPCION DEL PRODUCTO"
+                android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/product_Description_maitain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion de Producto"
+            android:layout_below="@+id/product_Price_maintain"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_desing"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD DISPONIBLE"
+                android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/product_disponible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad Disponible"
+            android:layout_below="@+id/product_Description_maitain"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_desing"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/aplly_changes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar  Cambios"
+            android:layout_below="@+id/product_disponible"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/delete_product_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Producto"
+            android:layout_below="@+id/aplly_changes_btn"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttons"
+            android:padding="12dp"
+            android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/editar_producto"
+        android:title="Editar Producto"/>
+
+    <item android:id="@+id/eliminar"
+        android:title="Eliminar"/>
+
+    <item android:id="@+id/vendido"
+        android:title="Marcar Como Vendido"/>
+
+</menu>

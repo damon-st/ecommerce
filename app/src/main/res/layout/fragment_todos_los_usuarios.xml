@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAdministrador.TodosLosUsuarios">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_boton_inicio"
+        android:id="@+id/bus"
+        >
+        <ImageButton
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/boton_buscar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_discover"
+            android:background="@drawable/cornert"
+            />
+        <EditText
+            android:id="@+id/texto_buscar_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Escribe el Nombre del Usuario"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bus"
+        android:id="@+id/recycler_usuarios"/>
+
+</RelativeLayout>

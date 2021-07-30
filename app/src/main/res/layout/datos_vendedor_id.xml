@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/vendedor_foto"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu nombre"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/vendedor_perfil_nombre"
+        android:layout_below="@+id/vendedor_foto"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu Telefono"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/vendedor_perfil_numero_celular"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/vendedor_perfil_nombre"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu Correo"
+        android:inputType="textEmailAddress"
+        android:id="@+id/vendedor_perfil_correo"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/vendedor_perfil_numero_celular"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu Direccion"
+        android:id="@+id/vendedor_perfil_direccion"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/vendedor_perfil_correo"/>
+
+    <Button
+        android:id="@+id/vendedor_perfil_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acualiza tus datos?"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vendedor_perfil_direccion"
+        />
+
+
+
+</RelativeLayout>

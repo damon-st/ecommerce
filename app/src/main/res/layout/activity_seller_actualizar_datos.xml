@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/seller_actualizar_foto"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tu nombre"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/seller_actualizar_nombre"
+        android:layout_below="@+id/seller_actualizar_foto"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tu Telefono"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/seller_actualizar_numero_celular"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/seller_actualizar_nombre"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu Correo"
+        android:inputType="textEmailAddress"
+        android:id="@+id/seller_actualizar_correo"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/seller_actualizar_numero_celular"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tu Direccion"
+        android:id="@+id/seller_actualizar_direccion"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/seller_actualizar_correo"/>
+
+    <Button
+        android:id="@+id/seller_actualizar_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="70dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seller_actualizar_direccion"
+        />
+
+
+
+</RelativeLayout>
